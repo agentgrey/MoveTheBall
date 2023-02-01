@@ -4,14 +4,14 @@ const box = document.getElementById('box');
 
 let num=box.getBoundingClientRect();
 let vw = (num.width) - 106.8;
-console.log(vw);
+// console.log(vw);
 // to move left or right
 let h = 10;
 // to move up and down
 let v = 10;
 
 document.addEventListener('keydown', function(event) {
-    console.log("key pressed" , event.key);
+    // console.log("key pressed" , event.key);
     if(event.key==='w') {
         if(v<=0) return;
         v-=10;
